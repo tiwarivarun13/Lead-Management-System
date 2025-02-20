@@ -13,7 +13,7 @@
 
 ##  Features
 - **User & Admin Authentication** (Multi-auth with Laravel Breeze)
-- **Upload Leads via Excel** (Supports `.xlsx` and `.csv` using PhpSpreadsheet)
+- **Upload Leads via Excel, Demo excel file `lead.xlsx` is present in 'resource\attachment folder** (Supports `.xlsx` and `.csv` using PhpSpreadsheet)
 - **Validate Uploaded Data** (Ensures required fields, unique email, and valid phone numbers)
 - **Search & Filter Leads** (Filter by status and creation date)
 - **Edit & Delete Leads** (Manage leads from the dashboard)
@@ -57,9 +57,10 @@ php artisan key:generate
 ### 5️ Run Migrations & Seeders
 ```sh
 php artisan migrate --seed
+php artisan db:seed --class=AdminUserSeeder
 ```
 
-### 6️ Start the Application
+### 6 Start the Application
 ```sh
 php artisan serve
 ```
@@ -69,7 +70,7 @@ php artisan serve
 ##  Uploading Leads
 1. Navigate to the dashboard.
 2. Click the **Upload Excel** button.
-3. Select a `.xlsx` or `.csv` file.
+3. Select a `.xlsx` or `.csv` file (Demo excel file `lead.xlsx` is present in 'resource\attachment folder').
 4. Click **Upload**.
 
 ---
