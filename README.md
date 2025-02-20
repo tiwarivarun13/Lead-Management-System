@@ -52,6 +52,7 @@ php artisan key:generate
   DB_DATABASE=your_database_name
   DB_USERNAME=your_db_user
   DB_PASSWORD=your_db_password
+  SESSION_DRIVER=file
   ```
 
 ### 5️ Run Migrations & Seeders
